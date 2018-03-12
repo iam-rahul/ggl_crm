@@ -1,0 +1,86 @@
+﻿
+body {
+}
+
+#wrapper {
+    width: auto;
+    height: 950px;
+    min-height: 600px;
+    border: solid green 1px;
+    margin: 5px auto;
+    background: repeating-radial-gradient(circle at 0 0, rgb(0, 162, 91), rgb(0, 228, 128) 100px );
+}
+
+#wlcm {
+    background: -moz-linear-gradient(top, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+    padding: 10px;
+    border-radius: 8px;
+    height: 30px;
+    margin-top:5px;
+}
+
+#wlcmMarquee {
+    color: #f00;
+    font-size: 22px;
+}
+
+#slider1 {
+    height: 250px;
+    width: auto;
+    max-width: 1000px;
+    margin:0px auto;
+    border:solid gray 2px;
+}
+
+#contentMain {
+    background-color: rgba(120, 190, 154, 0.87);
+    width: auto;
+    min-width: 1000px;
+    height: 644px;
+    margin: 5px auto;
+}
+
+#content-left {
+    width: 300px;
+    height: 625px;
+    background-color: rgba(3, 22, 0, 0.81);
+    float: left;
+}
+
+#news-head {
+    height: 40px;
+    width: 250px;
+    color: #808080;
+    border: solid green 1px;
+    border-radius: 15px;
+    margin: 10px auto;
+    font-family: 'Arial Rounded MT';
+    background: -moz-linear-gradient(top, #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    font-size: 26px;
+}
+
+#News-marquee {
+            color: #fff;
+            font-size:16px;
+            font-family: Calibri;
+            height:100%;
+        }
+#content-right {
+    width: 800px;
+    height: 600px;
+    border: solid black 1px;
+    float: left;
+}
+
+#intro {
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+}

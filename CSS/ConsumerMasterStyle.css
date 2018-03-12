@@ -1,0 +1,101 @@
+﻿body {
+    background-color: rgba(0, 255, 144, 0.36);
+}
+
+#container {
+    width: 1100px;
+    height: 1000px;
+    margin: 0px auto;
+}
+
+#header {
+    background-position: center bottom;
+    width: auto;
+    height: 168px;
+    background-image: url('../images/GreenNatureheading.jpg');
+}
+
+#logo {
+    width: 158px;
+    height: 162px;
+    float: left;
+}
+
+#sitetitle {
+    width: 680px;
+    height: 137px;
+    float: left;
+    font-size: 26px;
+    text-shadow: 10px 12px 2px rgba(13, 26, 5, 0.90);
+    color: white;
+    text-align: center;
+}
+
+#upic {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 5px;
+    border: solid green 1px;
+}
+
+#settings {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 50px;
+    border: solid black 1px;
+}
+/*********---------------------------after header-------------------*********/
+#curdetails {
+    width: 1100px;
+    height: 40px;
+    background-color: rgba(37, 106, 82, 0.63);
+    border-radius:20px;
+}
+
+.curpart {
+    width: 50%;
+    height: 40px;
+    float: left;
+    text-align: center;
+}
+
+#box {
+    width: 1100px;
+    height: auto;
+    min-height: 800px;
+    background: repeating-radial-gradient(circle at 0 0, rgb(0, 162, 91), rgb(0, 228, 128) 100px );
+}
+
+#menu {
+    width: 250px;
+    height: 800px;
+    float: left;
+    background-color: #ffd800;
+}
+
+#side_menu {
+    margin-left: 10px;
+    text-align: center;
+}
+
+#main {
+    width: 810px;
+    height: 780px;
+    float: left;
+    padding: 20px;
+}
+
+#pageheading {
+    margin: 5px auto;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(51, 161, 51, 0.89);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-shadow:rgba(13, 26, 5, 0.90) 5px 5px 5px;
+}

@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMaster.master.cs" Inherits="GeneralMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/GeneralMasterStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="moveMySlider()">
+    <form id="form1" runat="server">
+        <div id="box">
+            <div id="header">
+                <div id="logo">
+                    <img src="images/gglLogo1.gif" width="150px" height="130px" />
+                </div>
+                <div id="sitetitle">Green Gas Limited CRM</div>
+
+                <div id="general_manu">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <DynamicHoverStyle BackColor="#e1c540" ForeColor="Black" CssClass="hoverStyle" />
+                        <DynamicMenuItemStyle CssClass="HoverStyle" BackColor="#007500" Font-Bold="True" Font-Names="Adobe Caslon Pro"
+                            Font-Size="Larger" ForeColor="Black" HorizontalPadding="30px" VerticalPadding="15px" />
+                        <DynamicMenuStyle BorderColor="#E1C540" BorderStyle="Solid" BorderWidth="2px" VerticalPadding="5px" />
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/DefaultHomeGeneral.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Overview" Value="Overview" Selectable="False">
+                                <asp:MenuItem Text="About US" Value="About US" NavigateUrl="~/AboutUs.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Vision &amp; Mission" Value="Vision &amp; Mission" NavigateUrl="~/VisionAndMission.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/bord-of-directors.aspx" Text="Bord Of Directors" Value="Bord Of Directors"></asp:MenuItem>
+                                <asp:MenuItem Text="Future Outlook" Value="Future Outlook" NavigateUrl="~/FutureOutlook.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Our Services" Value="Our Services">
+                                <asp:MenuItem Text="CNG" Value="CNG">
+                                    <asp:MenuItem Text="CNG Vehical" Value="CNG Vehical">
+                                        <asp:MenuItem NavigateUrl="~/CNGvehiclesLKO.aspx" Text="Lucknow" Value="Lucknow"></asp:MenuItem>
+                                        <asp:MenuItem Text="Agra" Value="Agra" NavigateUrl="~/CNGvehiclesAgra.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Maintenance" Value="Maintenance" NavigateUrl="~/CNGmaintenance.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Conversion" Value="Conversion" NavigateUrl="~/CNGconversion.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="PNG" Value="PNG">
+                                    <asp:MenuItem Text="Area Covered LKO" Value="Area Covered LKO" NavigateUrl="~/staticPages/PNGaareaCoveredLKO.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Area Covered Agra" Value="Area Covered Agra" NavigateUrl="~/staticPages/PNGareaCoveredAgra.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Infrastructure" Value="Infrastructure" Selectable="False">
+                                    <asp:MenuItem Text="CNG Outlet" Value="CNG Outlet" Selectable="False">
+                                        <asp:MenuItem Text="Lucknow" Value="Lucknow" NavigateUrl="~/staticPages/CNGoutletLKO.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Agra" Value="Agra" NavigateUrl="~/staticPages/CNGoutletAgra.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="PNG Coverage" Value="PNG Coverage" NavigateUrl="~/staticPages/PNGcovereg.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Gas Value Chain" Value="Gas Value Chain" NavigateUrl="~/staticPages/GasValueChain.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/JoinUs.aspx" Text="Any Enquiry" Value="Any Enquiry"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Carrier" Value="Carrier" NavigateUrl="~/carrer.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="New Users" Value="New Users" Selectable="False">
+                                <asp:MenuItem Text="Vender" Value="Vender" NavigateUrl="~/VendorRegistration.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Customer" Value="Customer" NavigateUrl="~/Registration.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/JoinUs.aspx" Text="Enquiry" Value="Enquiry"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#e1c540" ForeColor="Black" CssClass="hoverStyle" />
+                        <StaticMenuItemStyle BackColor="#007500" Font-Bold="True" Font-Names="Adobe Ming Std L" Font-Size="20px" ForeColor="#E5E5E5" HorizontalPadding="39px" VerticalPadding="15px" />
+                        <StaticSelectedStyle BackColor="#1E3120" />
+                    </asp:Menu>
+                </div>
+            </div>
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            <div id="footer_portion">
+                <div id="footer1">
+                    <div class="footerpart">
+                        
+                    </div>
+                    <div class="footerpart">
+                        Developed By:  Rahul Raina
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿body {
+}
+#box {
+width:1200px;
+height :1049px;
+margin:0px auto;
+}
+#header {
+    background-position: center bottom;
+    width:auto;
+    height: 200px;
+    background-image: url('../images/GreenNatureheading.jpg');
+    background-repeat: no-repeat;
+}
+#logo {
+    width :150px;
+    height :150px;
+    float:left;
+}
+#sitetitle {
+width :850px;
+height :100px;
+float:left;
+color:white;
+text-align:center;
+font-size:63px;
+padding-top:30px;
+font-weight:bold;
+text-shadow:10px 12px 2px #140101;
+}
+/*--------------------------menu-----------------------*/
+#general_manu {
+    width:1000px;
+    height: 44px;
+    margin:0px auto;
+}
+#Menu1 {
+    border-top:solid #e1c540 3px;
+    margin:0px auto;
+    border-radius:0px 0px 10px 10px;
+}
+/*----------------------------------------------------------*/
+
+#main {
+width :auto;
+height:auto;
+min-height:660px;
+background-color :#dcdada;
+padding:5px;
+}
+
+#events {
+width :230px;
+height:660px;
+background-color :gray;
+float :left;
+padding:0px 5px;
+font-size:x-large;
+color:white;
+}
+#content {
+width :800px;
+height:auto;
+min-height:650px;
+float :left;
+padding:5px;
+background-color:silver;
+font-size:20px;
+}
+
+
+/*--------------------footer style starts from here---------------*/
+
+#footer_portion {
+    background-position: center center;
+    width: auto;
+    height: 200px;
+    background-image: url('../images/footer-green.jpg');
+}
+#footer1 {
+    width: auto;
+    height: 200px;
+    background-color:rgba(24, 31, 25, 0.85);
+}
+#footer2 {
+    color: white;
+    font-size: 24px;
+}
+
+.footerpart {
+width :500px;
+height:37px;
+float:left;
+color:white;
+font-size:large;
+text-align:center;
+padding-top:13px;
+}
+.footerpart a {
+    color: silver;
+    text-decoration: none;
+    font-family: 'Adobe Myungjo Std M';
+}

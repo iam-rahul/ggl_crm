@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminZone_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <style>
+            #CPheading {
+                width: 1000px;
+                height: 50px;
+                border: solid gray 2px;
+                background-color: #4cff00;
+            }
+         
+        </style>
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <div id="logo">
+                     <img src="../images/logoggl.png" width="150px" height ="150px"/>
+                </div>
+                <div id="sitetitle">
+                     WeWeWeWeWelcome to Green Gas Limited
+                </div>
+            </div>
+             <div id="menu">
+                 <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Size="XX-Large" ForeColor="#F6F6F6" OnMenuItemClick="Menu1_MenuItemClick">
+                     <DynamicHoverStyle BackColor="gray" ForeColor="Lime" />
+                     <DynamicMenuItemStyle Font-Size="Large" />
+                     <DynamicMenuStyle BackColor="#83A3FE" BorderColor="White" BorderStyle="Solid" />
+                     <DynamicSelectedStyle VerticalPadding="50px" />
+                     <Items>
+                         <asp:MenuItem Text="Login Info" Value="Login Info" NavigateUrl="~/AdminZone/LoginInfo.aspx">
+                         </asp:MenuItem>
+                         <asp:MenuItem Text="Consumer" Value="Consumer">
+                             <asp:MenuItem Text="Home(Dashboard)" Value="Home(Dashboard)" NavigateUrl="~/AdminZone/AdminHome.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Consumer Registration" Value="Consumer Registration"></asp:MenuItem>
+                             <asp:MenuItem NavigateUrl="~/AdminZone/StudentMgmt.aspx" Text="Consumer Profile Managment" Value="Consumer Profile Managment"></asp:MenuItem>
+                             <asp:MenuItem Text="Gas Booking" Value="Gas Booking"></asp:MenuItem>
+                             <asp:MenuItem Text="What's New" Value="What's New" NavigateUrl="~/AdminZone/NotificationMgmt.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Consumer BILL" Value="Consumer BILL"></asp:MenuItem>
+                             <asp:MenuItem Text="Authentication Management" Value="Authentication Management"></asp:MenuItem>
+                             <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                             <asp:MenuItem Text="Consumer Complain" Value="Consumer Complain"></asp:MenuItem>
+                         </asp:MenuItem>
+                         <asp:MenuItem Text="Vendor " Value="vendor ">
+                             <asp:MenuItem Text="Home(Dashboard)" Value="Home(Dashboard)" NavigateUrl="~/AdminZone/AdminHome.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Vendor Registration" Value="Vendor Registration" NavigateUrl="~/AdminZone/VendorRegistrationUpdateaspx.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Tendor Updates" Value="Tendor Updates" NavigateUrl="~/AdminZone/UpdateTendors.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/AdminZone/Enquiry.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/AdminZone/FeedbackMgmt.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Send Email" Value="Send Email" NavigateUrl="~/AdminZone/SendEmail.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="Send SMS" Value="Send SMS" NavigateUrl="~/AdminZone/SendSMS.aspx"></asp:MenuItem>
+                         </asp:MenuItem>
+                         <asp:MenuItem Text="Pump List" Value="Pump List" NavigateUrl="~/AdminZone/PumpList.aspx"></asp:MenuItem>
+                         <asp:MenuItem Text="My Account" Value="My Account">
+                             <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/AdminZone/ChangePassword.aspx"></asp:MenuItem>
+                             <asp:MenuItem Text="LogOut" Value="LogUp" NavigateUrl="~/ConsumerZone/Logout.aspx"></asp:MenuItem>
+                         </asp:MenuItem>
+                     </Items>
+                     <StaticHoverStyle BackColor="#3333CC" BorderColor="White" />
+                     <StaticMenuItemStyle BackColor="green" BorderWidth="2px" ForeColor="White" HorizontalPadding="42px" VerticalPadding="10px" />
+                 </asp:Menu>
+            </div>
+
+    <div id="main">
+        <div id="pageheading">
+        <asp:ContentPlaceHolder id="CPHeading" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        <br /><br /><br /><br /><br />
+        <div>
+            <asp:ContentPlaceHolder ID="CPMain" runat="server"></asp:ContentPlaceHolder>
+            </div>
+    </div>
+            <div id="footer"> </div>
+ </div>   
+    </form>
+</body>
+</html>

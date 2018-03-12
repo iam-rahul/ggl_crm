@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ConsumerMaster.master.cs" Inherits="ConsumerZone_ConsumerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="CPHPageHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../CSS/ConsumerMasterStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+       <div id="header">
+           <div id="logo">
+               <img src="../images/gglLogo1.gif" style="height: 157px; width: 153px" />
+           </div>
+           <div id="sitetitle">
+               Welcome To GGL CRM
+           </div>
+           <div id="upic">
+               <asp:Image ID="ImgUserPic" runat ="server" Width="150px" Height="150px" />
+           </div>
+           <div id="settings">
+
+               <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+                   <DynamicHoverStyle ForeColor="#0066CC" />
+                   <DynamicMenuItemStyle BackColor="White" Font-Size="Large" ForeColor="Black" HorizontalPadding="16px" VerticalPadding="5px" />
+                   <Items>
+                       <asp:MenuItem ImageUrl="../logo-images/Setting.png">
+                           <asp:MenuItem Text="My Profile" Value="My Profile" NavigateUrl="~/ConsumerZone/MyProfile.aspx"></asp:MenuItem>
+                           <asp:MenuItem Text="Privacy" Value="Privacy"></asp:MenuItem>
+                           <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/ConsumerZone/Logout.aspx"></asp:MenuItem>
+                       </asp:MenuItem>
+                   </Items>
+               </asp:Menu>
+
+           </div>
+       </div>
+        <div id="curdetails">
+            <div id="curdate" class="curpart">
+                <asp:Label ID="LblDate" runat ="server" ForeColor="White" Font-Italic="true" Font-Size="X-Large" />
+            </div>
+            <div id="curusername" class="curpart">
+                Hello, <asp:Label ID="LblUname" runat ="server" ForeColor="White" Font-Italic="true" Font-Size="X-Large" />
+            </div>
+        </div>
+        <div id="box">
+            <div id="menu" style="background-color: #CC9900; margin-left: 0px;">
+                <asp:Menu ID="side_menu" runat="server" StaticEnableDefaultPopOutImage="False" CssClass="sideMenu_style">
+                    <DynamicHoverStyle BackColor="#CC9900" />
+                    <DynamicMenuItemStyle BackColor="#33CC33" BorderStyle="Solid" BorderWidth="1px" Font-Size="Large" ForeColor="White" HorizontalPadding="15px" VerticalPadding="3px" />
+                    <Items >
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/ConsumerZone/StudentHome.aspx" > </asp:MenuItem>
+                        <asp:MenuItem Text="My Bill" Value="My Bill" NavigateUrl="~/ConsumerZone/My bill.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Complain" Value="Complain" NavigateUrl="~/ConsumerZone/complain.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ConsumerZone/DiscussionBord.aspx" Text="ducission bord" Value="ducission bord"></asp:MenuItem>
+                        <asp:MenuItem Text="New Connection" Value="New Connection" NavigateUrl="~/ConsumerZone/NewConnection.aspx">
+                            <asp:MenuItem Text="Pump LIst" Value="Pump LIst" NavigateUrl="~/ConsumerZone/PumpLists.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Order Details" Value="Order Details"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Gas Booking" Value="Gas Booking" NavigateUrl="~/ConsumerZone/gasBooking.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/ConsumerZone/feedback.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Register Complain" Value="Register Complain"></asp:MenuItem>
+                        <asp:MenuItem Text="My Profile" Value="My Profile" NavigateUrl="~/ConsumerZone/MyProfile.aspx">
+                            <asp:MenuItem Text="Profile Mgmt" Value="Profile Mgmt"></asp:MenuItem>
+                            <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/ConsumerZone/ChangePassword.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ConsumerZone/Logout.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#CC9900" />
+                    <StaticMenuItemStyle BackColor="#009933" BorderStyle="Solid" BorderWidth="1px" Font-Size="XX-Large" ForeColor="White" VerticalPadding="5px" />
+                </asp:Menu>
+            </div>
+            <div id="main">
+                <div id="pageheading">
+                    <asp:ContentPlaceHolder ID="CPHPageHeading" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <asp:ContentPlaceHolder ID="CPHMain" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer_portion">
+                <div id="footer1">
+                    <div class="footerpart">
+                        Copyright &copy; to <a href="http://www.GGLindia.org">Softpro India Lucknow</a>
+                    </div>
+                    <div class="footerpart">
+                        Developed By: Er. Abc...
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>
+</html>
